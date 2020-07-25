@@ -9,12 +9,6 @@
 
 Host github.com
 	HostName github.com
-#	PreferredAuthentications publickey
+  User git
+	PreferredAuthentications publickey
 	IdentityFile ~/.ssh/id_rsa.github
-  IdentitiesOnly yes
-
-Host backlog.jp 
-	HostName backlog.jp
-#	PreferredAuthentications publickey
-	IdentityFile ~/.ssh/id_rsa.backlog
-  IdentitiesOnly yes

@@ -24,6 +24,8 @@ brew cask install spotify
 brew cask install visual-studio-code
 brew cask install adobe-creative-cloud
 brew cask install discord
+brew cask install chatwork
+brew cask install alfred
 
 while true; do
   read -p 'Add Other Apps "For Private"? [Y/n]' Answer
