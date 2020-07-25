@@ -76,16 +76,6 @@ if ! command_exists vim ; then
 fi
 
 #
-# Powerline
-#
-echo " --------- Powerline ---------"
-# Font is 14pt Iconsolata for Powerline with Solarized Dark iterm2 colors.
-git clone https://github.com/bhilburn/powerlevel9k.git ~/powerlevel9k
-git clone https://github.com/powerline/fonts.git ~/fonts
-~/fonts/install.sh
-echo " ------------ END ------------"
-
-#
 # Install ruby
 #
 if ! command_exists rbenv ; then
@@ -123,34 +113,6 @@ if ! command_exists nodebrew ; then
   nodebrew use latest
   node -v
   npm -v
-  echo " ------------ END ------------"
-fi
-
-#
-# Install Yarn
-#
-if ! command_exists yarn ; then
-  echo " ----------- Yarn ------------"
-  brew install yarn
-  echo " ------------ END ------------"
-fi
-
-#
-# TeX settings
-#
-if ! command_exists tex ; then
-  echo " ------------ TeX ------------"
-  brew cask install mactex
-  # Tex Live Utility > preference > path -> /Library/TeX/texbin
-  version=$(tex -version | grep -oE '2[0-9]{3}' | head -1)
-  echo $pass | sudo -S /usr/local/texlive/$version/bin/x86_64-darwin/tlmgr path add
-  echo $pass | sudo -S tlmgr update --self --all
-  # JPN Lang settings
-  cd /usr/local/texlive/$version/texmf-dist/scripts/cjk-gs-integrate
-  echo $pass | sudo -S perl cjk-gs-integrate.pl --link-texmf --force
-  echo $pass | sudo -S mktexlsr
-  echo $pass | sudo -S kanji-config-updmap-sys hiragino-elcapitan-pron
-  # Select ==> TeXShop > Preferences > Source > pTeX (ptex2pdf)
   echo " ------------ END ------------"
 fi
 
