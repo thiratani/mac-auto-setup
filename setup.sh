@@ -22,9 +22,9 @@ while true; do
   case $Answer in
     '' | [Yy]* )
       ssh-keygen -t rsa
-      chmod 600 ~/.ssh/id_rsa
+      chmod 600 ~/.ssh/id_rsa.github
       eval `ssh-agent`
-      ssh-add ~/.ssh/id_rsa
+      ssh-add -K ~/.ssh/id_rsa.github
       ssh-add -l
       echo "Let’s register your public key on GitHub"
       break;
@@ -38,11 +38,6 @@ while true; do
   esac
 done;
 echo " ------------ END ------------"
-
-#
-# Memorize user pass
-#
-read -sp "Your Password: " pass;
 
 #
 # Mac App Store apps install
