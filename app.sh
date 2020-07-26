@@ -24,7 +24,8 @@ brew cask install adobe-creative-cloud
 brew cask install discord
 brew cask install chatwork
 brew cask install alfred
-brew cask install shiftitl
+brew cask install shiftit
+brew cask install karabiner-elements
 
 while true; do
   read -p 'Add Other Apps "For Private"? [Y/n]' Answer
