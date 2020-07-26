@@ -17,7 +17,6 @@ brew cask install java
 brew cask install android-studio
 brew cask install atom
 brew cask install google-chrome
-brew cask install iterm2
 brew cask install sourcetree
 brew cask install google-japanese-ime
 brew cask install spotify
@@ -26,6 +25,7 @@ brew cask install adobe-creative-cloud
 brew cask install discord
 brew cask install chatwork
 brew cask install alfred
+brew cask install shiftitl
 
 while true; do
   read -p 'Add Other Apps "For Private"? [Y/n]' Answer
