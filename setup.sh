@@ -61,6 +61,14 @@ if ! command_exists zsh ; then
 fi
 
 #
+# Install zsh env
+#
+echo " ------------ zsh env --------"
+ln -s $(cd $(dirname ${BASH_SOURCE:-$0}); pwd)/settings/zsh/.dotfiles/.zshrc ~/.zshrc
+ln -s $(cd $(dirname ${BASH_SOURCE:-$0}); pwd)/settings/zsh/.dotfiles/.zshenv ~/.zshenv
+echo " ------------ END ------------"
+
+#
 # Install vim
 #
 if ! command_exists vim ; then
