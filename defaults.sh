@@ -82,7 +82,7 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 # サイドバーのアイコンサイズを大きく表示
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 # デフォルトでリストビュー形式で表示
-defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 # デフォルトでLibraryを表示
 chflags nohidden ~/Library
 
