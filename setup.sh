@@ -1,10 +1,9 @@
 #!/bin/bash
 cat << EOS
 
- AkkeyLab
+ TkyLab
 
- The elapsed time does not matter.
- Because speed is important.
+ me, and the other.
 
 EOS
 
@@ -45,7 +44,7 @@ echo " ------------ END ------------"
 if ! command_exists mas ; then
   echo " ---- Mac App Store apps -----"
   brew install mas
-  mas install 497799835  # Xcode (8.2.1)
+  mas install 497799835  # Xcode
   echo " ------------ END ------------"
 fi
 
@@ -86,15 +85,6 @@ if ! command_exists rbenv ; then
   ruby -v
   echo " ------------ END ------------"
 fi
-
-#
-# Install dotfiles system
-#
-echo " ---------- dotfiles ---------"
-sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`"
-cp $(cd $(dirname ${BASH_SOURCE:-$0}); pwd)/settings/zsh/private.zsh ~/.yadr/zsh/private.zsh
-source ~/.zshrc
-echo " ------------ END ------------"
 
 #
 # Install Node.js env
@@ -182,15 +172,3 @@ while true; do
       echo Please answer YES or NO.
   esac
 done;
-
-read -p 'Please enter your GitHub Access Token. You can skip by typing "N".' Answer
-case $Answer in
-  '' | [Nn]* )
-    echo "Skip"
-    ;;
-  * )
-    echo "export GITHUB_ACCESS_TOKEN=${Answer}" >> ~/.yadr/zsh/private.zsh
-    echo "export HOMEBREW_GITHUB_API_TOKEN=${Answer}" >> ~/.yadr/zsh/private.zsh
-    echo "Writing to ~/.yadr/zsh/private.zsh is complete."
-    echo " ------------ END ------------"
-esac

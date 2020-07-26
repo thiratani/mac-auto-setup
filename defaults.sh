@@ -1,10 +1,9 @@
 #!/bin/zsh
 cat << EOS
 
- TkyLab 
+ TkyLab
 
- The elapsed time does not matter.
- Because speed is important.
+ me, and the other.
 
 EOS
 
