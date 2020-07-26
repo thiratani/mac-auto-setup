@@ -1,0 +1,69 @@
+# 基本は github.com のレポジトリーを指定するだけ
+# 形式
+# [[plugins]]
+# repo = ''
+# on_ft
+
+###############################################
+# Shougo
+###############################################
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+#[[plugins]]
+#repo = 'Shougo/denite.nvim'
+#
+#[[plugins]]
+#repo = 'Shougo/deoppet.nvim'
+
+###############################################
+# For Salesforce  
+###############################################
+[[plugins]]
+repo = 'hmuronaka/lightning-vim'
+
+[[plugins]]
+repo = 'neowit/vim-force.com'
+
+###############################################
+# Vim  
+###############################################
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]]
+repo = 'rking/ag.vim'
+
+[[plugins]]
+repo = 'yuezk/vim-js'
+
+[[plugins]]
+repo = 'maxmellon/vim-jsx-pretty'
+
+#[[plugins]]
+#repo = 'Yggdroot/indentLine'
+
+###############################################
+# Git  
+###############################################
+[[plugins]]
+repo = 'gregsexton/gitv'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+###############################################
+# JavaScript  
+###############################################
+
+###############################################
+# Swift  
+###############################################
+[[plugins]]
+repo = 'keith/swift.vim'

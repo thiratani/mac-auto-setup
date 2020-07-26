@@ -78,6 +78,16 @@ if ! command_exists vim ; then
 fi
 
 #
+# Install vim env
+#
+echo " ---------- Vim env-----------"
+mkdir -p ~/.vim/rc/
+ln -s $(cd $(dirname ${BASH_SOURCE:-$0}); pwd)/settings/vim/.vimrc ~/.vimrc
+ln -s $(cd $(dirname ${BASH_SOURCE:-$0}); pwd)/settings/vim/rc/dein.toml ~/.vim/rc/dein.toml
+ln -s $(cd $(dirname ${BASH_SOURCE:-$0}); pwd)/settings/vim/rc/dein_lazy.toml ~/.vim/rc/dein_lazy.toml
+echo " ------------ END ------------"
+
+#
 # Install ruby
 #
 if ! command_exists rbenv ; then
