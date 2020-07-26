@@ -99,13 +99,11 @@ fi
 #
 if ! command_exists nodebrew ; then
   echo " ---------- Node.js ----------"
-  curl -L git.io/nodebrew | perl - setup
-  nodebrew ls-remote
-  nodebrew install-binary latest
-  nodebrew ls
-  nodebrew use latest
-  node -v
-  npm -v
+  brew install nodenv
+  nodenv -v
+  nodenv install 10.0.0
+  nodenv install 6.11.4
+  nodenv versions
   echo " ------------ END ------------"
 fi
 
