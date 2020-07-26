@@ -18,11 +18,11 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -boolean true
 # スクロール時のみスクロールバーを表示
 defaults write -g AppleShowScrollBars -string "WhenScrolling"
 # 自動大文字の無効化
-$ defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 # クラッシュレポートの無効化
-$ defaults write com.apple.CrashReporter DialogType -string "none"
+defaults write com.apple.CrashReporter DialogType -string "none"
 # Bluetoothヘッドフォン/ヘッドセットの音質を向上させる
-$ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 # デフォルトで秒まで表示
 defaults write com.apple.menuextra.clock DateFormat -string 'EEE d MMM HH:mm:ss'
 # バッテリー残量をパーセントで表示
@@ -52,7 +52,7 @@ defaults write com.apple.dock persistent-apps -array
 # ウインドウをしまうときのエフェクト（デフォルトに戻す）
 defaults delete com.apple.dock mineffect
 # 開いているアプリケーションのみを表示
-$ defaults write com.apple.dock static-only -bool true
+defaults write com.apple.dock static-only -bool true
 
 ########## Mouse
 # マウスの速度
