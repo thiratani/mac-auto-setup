@@ -26,6 +26,7 @@ brew cask install chatwork
 brew cask install alfred
 brew cask install shiftit
 brew cask install karabiner-elements
+brew cask install paw
 
 while true; do
   read -p 'Add Other Apps "For Private"? [Y/n]' Answer
