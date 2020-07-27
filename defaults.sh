@@ -34,6 +34,10 @@ defaults write -g NSInitialToolTipDelay -integer 0
 # ダイアログ表示やウィンドウリサイズ速度の高速化
 defaults write -g NSWindowResizeTime 0.1
 
+########## Mission Control
+# 最新の使用状況に基づいて操作スペースを自動的に並べ替える
+defaults write com.apple.dock mru-spaces -bool false
+
 ########## Dock
 # Dockを自動的に隠さない
 defaults write com.apple.dock autohide -bool false
