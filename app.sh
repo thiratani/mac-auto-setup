@@ -33,7 +33,7 @@ while true; do
   read -p 'Add Other Apps "For Private"? [Y/n]' Answer
   case $Answer in
     '' | [Yy]* )
-      # brew cask install dropbox
+      brew cask install dropbox
       break;
       ;;
     [Nn]* )
