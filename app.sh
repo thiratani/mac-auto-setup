@@ -16,6 +16,7 @@ brew cask install java
 brew cask install android-studio
 brew cask install atom
 brew cask install google-chrome
+brew cask install google-backup-and-sync
 brew cask install sourcetree
 brew cask install google-japanese-ime
 brew cask install spotify
