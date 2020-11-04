@@ -14,6 +14,7 @@ echo " ----- Install command ------"
 brew install ag 
 npm -g install gulp
 npm i @google/clasp -g
+
 while true; do
   read -p 'Add Other command "For Private"? [Y/n]' Answer
   case $Answer in
